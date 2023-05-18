@@ -1,0 +1,12 @@
+#write a program to print maximum subarray sum
+arr=list(map(int,input().split()))
+n=len(arr)
+maxi=arr[0]
+cs=0
+for i in range(0,n):
+    cs=cs+arr[i]
+    if cs>maxi:
+        maxi=cs
+    if cs<0:
+        cs=0
+print(maxi)
